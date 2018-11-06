@@ -3,7 +3,7 @@
 //File Name: extra1.cpp
 //Assignment Number: Extra Credit #1
 //Description: draw triangle, diamond, and X using only three specific cout statements for each
-//Last Changed: October 21, 2018
+//Last Changed: November 5, 2018
 
 #include <iostream>
 #include <cstdlib> // library that includes absolute value function
@@ -20,7 +20,7 @@ int main ()
 
 		for (int pound = 0; pound <= 2 * row - 1; ++pound) // used to decrease number of pounds printed starting with 8
 		{
-			cout << "#";
+			cout << "*";
 		}
 		cout << endl; // ends each row, must be outside of loop printing contents of each row
 	}
@@ -34,7 +34,7 @@ int main ()
 			// prints second pound when row = -2 and column = -1
 			// prints third pound when row = -2 and column = 1, etc.
 			if (abs(row) + abs(column) == 3) 
-				cout << "#";
+				cout << "*";
 			else
 				cout << " "; // prints a space when if statement is false
 		}
@@ -50,7 +50,7 @@ int main ()
 			// prints second pound when row = -3 and column = 3
 			// prints third pound when row = -2 and column = -2, etc
 			if (abs(row) - abs(column) == 0)
-				cout << "#";
+				cout << "*";
 			else
 				cout << " "; // prints a space when if statement is false
 		}
